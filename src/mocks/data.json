@@ -1,0 +1,26 @@
+{
+    "imagenes": [
+      {
+        "nombre": "imagen1",
+        "ruta": "/public/assets/Gallery-1.jpg"
+      },
+      {
+        "nombre": "imagen2",
+        "ruta": "/public/assets/Gallery-2.jpg"
+      },
+      {
+        "nombre": "imagen3",
+        "ruta": "/public/assets/Gallery-3.jpg"
+        },
+        {
+        "nombre": "Logo",
+        "ruta": "/public/assets/Logo.png"
+        },
+        {
+        "nombre": "main",    
+        "ruta": "/public/assets/main-1.jpg"
+        },
+        {
+      }
+    ]
+  }
