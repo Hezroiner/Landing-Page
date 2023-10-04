@@ -1,27 +1,41 @@
-window.onload = () => {
-  console.log("page is fully loaded");
-};
+function cargarImagenes() {
+  fetch('/src/mocks/data.json')
+    .then(response => response.json())
+    .then(data => {
+      const imagenes = data.imagenes.slice(0, 3);
+      const rutaLogo = data.imagenes[3].ruta;
+      const rutaImagenPrincipal = data.imagenes[4].ruta;
+      const codigo = data.codigo;
+      mostrarImagenes(imagenes);
+      mostrarLogo(rutaLogo);
+      mostrarImagenPrincipal(rutaImagenPrincipal);
+      ejecutarCodigo(codigo);
+    })
+    .catch(error => {
+      console.error('Error al cargar las imágenes:', error);
+    });
+}
 
-const cargarGallery = async () => {
-  const response = await fetch('/src/mocks/data.json');
-  const data = await response.json();
-  const imagenes = data.imagenes.slice(0, 3);
-
+function mostrarImagenes(imagenes) {
   imagenes.forEach((imagen, index) => {
     const img = document.querySelector(`.Gallery-${index + 1}`);
     img.src = imagen.ruta;
     img.alt = imagen.nombre;
   });
-};
+}
 
-// Ejecutar el código
-const ejecutarCodigo = async () => {
-  const response = await fetch('/src/mocks/data.json');
-  const data = await response.json();
-  const codigo = data.codigo;
-  eval(codigo);
-};
+function mostrarLogo(rutaLogo) {
+  const logoIco = document.querySelector('.logo-ico');
+  logoIco.src = rutaLogo;
+}
 
-// Iniciar las tareas
-cargarImagenes();
-ejecutarCodigo();
+function mostrarImagenPrincipal(rutaImagenPrincipal) {
+  const mainIco = document.querySelector('.img-main');
+  mainIco.src = rutaImagenPrincipal;
+}
+
+
+window.onload = () => {
+  console.log('La página se ha cargado completamente');
+  cargarImagenes();
+};
