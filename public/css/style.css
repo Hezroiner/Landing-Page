@@ -38,3 +38,42 @@ header nav ul {
 header nav li {
   margin-right: 30px;
 }
+.Home-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-main {
+  border-radius: 133px;
+  width: 497px;
+  height: 377px;
+  position: relative;
+}
+
+.Home-2{
+  background-color: #F5F5F5;
+display: flex;
+}
+.Gallery-1{
+  border-radius: 12px;
+width: 497px;
+height: 301px;
+position: relative;
+}
+.Gallery-2{
+  border-radius: 16px;
+width: 374px;
+height: 309px;
+position: relative;
+}
+
+.Gallery-3{
+  border-radius: 17px;
+width: 386px;
+height: 309px;
+position: relative;
+}
+
+.Home-3{
+  background-color: #F5ECD8;
+}
