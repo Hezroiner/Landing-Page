@@ -19,6 +19,22 @@
       {
         "nombre": "main",    
         "ruta": "/public/assets/main-1.jpg"
+      },
+      {
+        "nombre": "Evento1",
+        "ruta": "/public/assets/Event-1.png"
+      },
+      {
+        "nombre": "Evento2",
+        "ruta": "/public/assets/Event-2.png"
+      },
+      {
+        "nombre": "Evento3",
+        "ruta": "/public/assets/Event-3.png"
+      },
+      {
+        "nombre": "Evento4",
+        "ruta": "/public/assets/Event-4.png"
       }
     ]
   }
