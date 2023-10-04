@@ -54,6 +54,47 @@ header nav li {
   background-color: #F5F5F5;
 display: flex;
 }
+.cardGallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-area: GALL;
+  padding-top: 15vh;
+  padding-bottom: 2%;
+  gap: 20px;
+}
+#Gal{
+  display: flex;
+  width: 80%;
+  height: 600px;
+  gap: 1%;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+#Gal::-webkit-scrollbar {
+  width: 10px; 
+}
+
+#Gal::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#Gal::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+  border: none; 
+}
+
+#Gal img {
+  width: 33.33%; 
+  height: auto; 
+  object-fit: cover; 
+}
+#Gal img:hover{
+  width: 50%; 
+  height: auto;
+  box-shadow: 0 0 30px #77c3cf;
+}
 .Gallery-1{
   border-radius: 12px;
 width: 497px;
