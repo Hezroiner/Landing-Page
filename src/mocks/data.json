@@ -11,16 +11,14 @@
       {
         "nombre": "imagen3",
         "ruta": "/public/assets/Gallery-3.jpg"
-        },
-        {
+      },
+      {
         "nombre": "Logo",
         "ruta": "/public/assets/Logo.png"
-        },
-        {
+      },
+      {
         "nombre": "main",    
         "ruta": "/public/assets/main-1.jpg"
-        },
-        {
       }
     ]
   }
