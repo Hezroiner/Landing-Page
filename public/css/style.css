@@ -145,3 +145,90 @@ position: relative;
   height: 200px;
   border-radius: 12px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  background-color: #393E46;
+  padding: 50px 90px;
+  color: #FFF;
+}
+
+.footer-contenido{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr 4fr 2fr;
+  grid-gap: 5%;
+
+  grid-template-columns: 1fr;
+}
+
+ .Tit1 i{
+  margin-top: 20px;
+
+  display: inline-block;
+  display: grid;
+  grid-template-columns: repeat(4, 30px);
+}
+
+
+ .icon {
+  margin-top: 20px;
+ display: grid;
+ grid-template-columns: repeat(3,40px);
+}
+
+.icon-logo{
+  display: grid;
+  grid-column: 1/2;
+}
+
+.Tit1{
+  display: grid;
+  grid-column: 2/3;
+}
+
+.Tit2{
+  display: grid;
+  grid-column: 3/4;
+  margin-left: 200px;
+} 
+
+.correo2{
+  display: grid;
+  grid-row: 4/5;
+}
+
+ .Tit3{
+  display: grid;
+  grid-column: 4/5;    
+}
+
+.des2{
+  display: grid;
+  grid-row: 4/5;
+}
+
+.sub{
+  margin-top: 30px;
+
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
