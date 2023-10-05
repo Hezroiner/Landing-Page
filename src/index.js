@@ -48,6 +48,7 @@ function ejecutarCodigo(codigo) {
 
 function obtenerEventos(data) {
   return data.events;
+  return data.eventsInfo;
 }
 
 function mostrarEventos(eventos) {
@@ -57,11 +58,10 @@ function mostrarEventos(eventos) {
     eventsContainer.appendChild(eventDiv);
   });
 }
-
-function crearEventoDiv(evento) {
-  const eventDiv = document.createElement('div');
-  eventDiv.classList.add('item-events');
-  eventDiv.style.backgroundImage = `url(${evento.path})`;
-  eventDiv.innerHTML = `<h3>${evento.title}</h3>`;
-  return eventDiv;
+function mostrarEventosInfo(eventosInfo) {
+  const eventsInfoContainer = document.querySelector('.events-info');
+  eventosInfo.forEach(eventoInfo => {
+    const eventInfoDiv = crearEventoInfoDiv(eventoInfo);
+    eventsInfoContainer.appendChild(eventInfoDiv);
+  });
 }
