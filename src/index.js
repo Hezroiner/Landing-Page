@@ -31,6 +31,21 @@ function mostrarImagenes(imagenes) {
   });
 }
 
+function mostrarLogo(rutaLogo) {
+  const logoIco = document.querySelector('.logo-ico');
+  logoIco.src = rutaLogo;
+}
+
+function mostrarImagenPrincipal(rutaImagenPrincipal) {
+  const mainIco = document.querySelector('.img-main');
+  mainIco.src = rutaImagenPrincipal;
+}
+
+function ejecutarCodigo(codigo) {
+  const output = eval(codigo);
+  console.log(output);
+}
+
 function obtenerEventos(data) {
   return data.events;
 }
@@ -49,19 +64,4 @@ function crearEventoDiv(evento) {
   eventDiv.style.backgroundImage = `url(${evento.path})`;
   eventDiv.innerHTML = `<h3>${evento.title}</h3>`;
   return eventDiv;
-}
-
-function mostrarLogo(rutaLogo) {
-  const logoIco = document.querySelector('.logo-ico');
-  logoIco.src = rutaLogo;
-}
-
-function mostrarImagenPrincipal(rutaImagenPrincipal) {
-  const mainIco = document.querySelector('.img-main');
-  mainIco.src = rutaImagenPrincipal;
-}
-
-function ejecutarCodigo(codigo) {
-  const output = eval(codigo);
-  console.log(output);
 }
