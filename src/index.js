@@ -7,6 +7,8 @@ function cargarImagenes() {
   fetch('/src/mocks/data.json')
     .then(response => response.json())
     .then(data => {
+      const eventosInfo = obtenerEventosInfo(data);
+      mostrarEventosInfo(eventosInfo);
       const imagenes = data.imagenes.slice(0, 3);
       const rutaLogo = data.imagenes[3].ruta;
       const rutaImagenPrincipal = data.imagenes[4].ruta;
@@ -64,4 +66,17 @@ function crearEventoDiv(evento) {
   eventDiv.style.backgroundImage = `url(${evento.path})`;
   eventDiv.innerHTML = `<h3>${evento.title}</h3>`;
   return eventDiv;
+}
+
+function obtenerEventosInfo(data) {
+  return data.eventsInfo[0];
+}
+
+function mostrarEventosInfo(eventosInfo) {
+  const infoTitle = document.querySelector('.infoTitle');
+  const infoSubtitle = document.querySelector('.infoSubtitle');
+  const infoDescription = document.querySelector('.infoDescription');
+  infoTitle.textContent = eventosInfo.title;
+  infoSubtitle.textContent = eventosInfo.subtitle;
+  infoDescription.textContent = eventosInfo.description;
 }
