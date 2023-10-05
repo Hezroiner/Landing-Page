@@ -1,64 +1,65 @@
 {
-    "imagenes": [
-      {
-        "nombre": "imagen1",
-        "ruta": "/public/assets/Gallery-1.jpg"
-      },
-      {
-        "nombre": "imagen2",
-        "ruta": "/public/assets/Gallery-2.jpg"
-      },
-      {
-        "nombre": "imagen3",
-        "ruta": "/public/assets/Gallery-3.jpg"
-      },
-      {
-        "nombre": "Logo",
-        "ruta": "/public/assets/Logo.png"
-      },
-      {
-        "nombre": "main",    
-        "ruta": "/public/assets/main-1.jpg"
-      },
-      {
-        "nombre": "Evento1",
-        "ruta": "/public/assets/Event-1.png"
-      },
-      {
-        "nombre": "Evento2",
-        "ruta": "/public/assets/Event-2.png"
-      },
-      {
-        "nombre": "Evento3",
-        "ruta": "/public/assets/Event-3.png"
-      },
-      {
-        "nombre": "Evento4",
-        "ruta": "/public/assets/Event-4.png"
-      }
-    ],
-    "events":[
-      {
-        "title": "Eventos Deportivos",
-        "path": "/public/assets/Events-Sporting.jpg"
-      },
-      {
-        "title": "Eventos Especiales",
-        "path": "/public/assets/Events-Special.jpg"
-      },
-      {
-        "title": "Eventos Mascostas",
-        "path": "/public/assets/Events-Pets.jpg"
-      },
-      {
-        "title": "Eventos Artísticos",
-        "path": "/public/assets/Events-Artistic.jpg"
-      }
-    ],
-    "eventsInfo":
-      {
-        "title": "DISPONIBLES",
-        "subtitle": "Diferente servicios  de fotografia ",
-        "description": "Capturemos los momentos más importantes de tu vida con imágenes de alta calidad."
-      }
-  }
+  "imagenes": [
+    {
+      "nombre": "imagen1",
+      "ruta": "/public/assets/Gallery-1.jpg"
+    },
+    {
+      "nombre": "imagen2",
+      "ruta": "/public/assets/Gallery-2.jpg"
+    },
+    {
+      "nombre": "imagen3",
+      "ruta": "/public/assets/Gallery-3.jpg"
+    },
+    {
+      "nombre": "Logo",
+      "ruta": "/public/assets/Logo.png"
+    },
+    {
+      "nombre": "main",
+      "ruta": "/public/assets/main-1.jpg"
+    },
+    {
+      "nombre": "Evento1",
+      "ruta": "/public/assets/Event-1.png"
+    },
+    {
+      "nombre": "Evento2",
+      "ruta": "/public/assets/Event-2.png"
+    },
+    {
+      "nombre": "Evento3",
+      "ruta": "/public/assets/Event-3.png"
+    },
+    {
+      "nombre": "Evento4",
+      "ruta": "/public/assets/Event-4.png"
+    }
+  ],
+  "events": [
+    {
+      "title": "Eventos Deportivos",
+      "path": "/public/assets/Events-Sporting.jpg"
+    },
+    {
+      "title": "Eventos Especiales",
+      "path": "/public/assets/Events-Special.jpg"
+    },
+    {
+      "title": "Eventos Mascostas",
+      "path": "/public/assets/Events-Pets.jpg"
+    },
+    {
+      "title": "Eventos Artísticos",
+      "path": "/public/assets/Events-Artistic.jpg"
+    }
+  ],
+  "eventsInfo": [
+    {
+      "title": "DISPONIBLES",
+      "subtitle": "Diferente servicios  de fotografia ",
+      "description": "Capturemos los momentos más importantes de tu vida con imágenes de alta calidad."
+    }
+  ]
+}
