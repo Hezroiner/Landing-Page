@@ -80,3 +80,36 @@ function mostrarEventosInfo(eventosInfo) {
   infoSubtitle.textContent = eventosInfo.subtitle;
   infoDescription.textContent = eventosInfo.description;
 }
+
+const formulario = document.querySelector('#formulario');
+const botonContinuar = document.querySelector('#boton-continuar');
+
+botonContinuar.addEventListener('click', () => {
+  const datos = {
+    nombre: formulario.nombre.value,
+    telefono: formulario.telefono.value,
+    email: formulario.email.value
+  };
+  guardarDatos(datos);
+});
+
+function guardarDatos(datos) {
+  fetch('/src/mocks/data.json')
+    .then(response => response.json())
+    .then(data => {
+      data.datos.push(datos);
+      return fetch('/src/mocks/data.json', {
+        method: 'PUT',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+    })
+    .then(response => {
+      console.log('Datos guardados exitosamente');
+    })
+    .catch(error => {
+      console.error('Error al guardar los datos:', error);
+    });
+}
