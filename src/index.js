@@ -63,8 +63,18 @@ function mostrarEventos(eventos) {
 function crearEventoDiv(evento) {
   const eventDiv = document.createElement('div');
   eventDiv.classList.add('item-events');
-  eventDiv.style.backgroundImage = `url(${evento.path})`;
-  eventDiv.innerHTML = `<h3>${evento.title}</h3>`;
+
+  const img = document.createElement('img');
+  img.src = evento.path;
+  img.alt = evento.title;
+  img.id = 'imagen-' + evento.id;
+  eventDiv.appendChild(img);
+
+  const titulo = document.createElement('h3');
+  titulo.textContent = evento.title;
+  titulo.id = 'titulo-' + evento.id;
+  eventDiv.appendChild(titulo);
+
   return eventDiv;
 }
 
