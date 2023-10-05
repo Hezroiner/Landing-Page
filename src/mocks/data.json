@@ -54,5 +54,11 @@
         "title": "Eventos Artísticos",
         "path": "/public/assets/Events-Artistic.jpg"
       }
-    ]
+    ],
+    "events-info-card":
+      {
+        "title": "DISPONIBLES",
+        "subtitle": "Diferente servicios  de fotografia ",
+        "description": "Capturemos los momentos más importantes de tu vida con imágenes de alta calidad."
+      }
   }
