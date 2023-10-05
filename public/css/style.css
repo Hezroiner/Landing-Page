@@ -133,3 +133,17 @@ position: relative;
   padding-bottom: 2%;
   gap: 20px;
 }
+
+#formulario{
+  padding: 20px;
+ display: inline-block;
+flex-direction: column; 
+}
+
+#boton-continuar{
+  padding: 9px;
+  margin-left: 900px;
+ border: burlywood;
+  background-color: burlywood;
+color: azure;
+}
