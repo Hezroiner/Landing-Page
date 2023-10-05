@@ -65,13 +65,14 @@
   "Footer-info-card": [
     {
       "title1": "Chaves Scape",
-    "description": "Gracias por depositar la confianza en nuestro trabajo, nos queda satisfacción de saber que hemos dejado una buena impresión de imágenes hermosas y recuerdos duraderos.",
-    "title2": "Home",
-    "subtitle": "Productos",
-    "subtitle2": "About us",
+      "description": "Gracias por depositar la confianza en nuestro trabajo, nos queda satisfacción de saber que hemos dejado una buena impresión de imágenes hermosas y recuerdos duraderos.",
+      "title2": "Home",
+      "subtitle": "Productos",
+      "subtitle2": "About us",
       "title3": "Contact us",
       "correo1": "Achaba03x@gmail.com",
       "correo2": "Suarezgomezjosepablo03@gmail.com"
     }
-  ]
+  ],
+  "datos": []
 }

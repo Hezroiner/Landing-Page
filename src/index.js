@@ -14,7 +14,7 @@ function cargarImagenes() {
       const rutaImagenPrincipal = data.imagenes[4].ruta;
       const codigo = data.codigo;
       const eventos = obtenerEventos(data);
-      const footer = obtenerFooter(data)
+      const footer = obtenerFooter(data);
       mostrarImagenes(imagenes);
       mostrarLogo(rutaLogo);
       mostrarImagenPrincipal(rutaImagenPrincipal);
@@ -65,8 +65,18 @@ function mostrarEventos(eventos) {
 function crearEventoDiv(evento) {
   const eventDiv = document.createElement('div');
   eventDiv.classList.add('item-events');
-  eventDiv.style.backgroundImage = `url(${evento.path})`;
-  eventDiv.innerHTML = `<h3>${evento.title}</h3>`;
+
+  const img = document.createElement('img');
+  img.src = evento.path;
+  img.alt = evento.title;
+  img.id = 'imagen-' + evento.id;
+  eventDiv.appendChild(img);
+
+  const titulo = document.createElement('h3');
+  titulo.textContent = evento.title;
+  titulo.id = 'titulo-' + evento.id;
+  eventDiv.appendChild(titulo);
+
   return eventDiv;
 }
 
@@ -82,7 +92,6 @@ function mostrarEventosInfo(eventosInfo) {
   infoSubtitle.textContent = eventosInfo.subtitle;
   infoDescription.textContent = eventosInfo.description;
 }
-
 function obtenerFooter(data) {
   return data['Footer-info-card'][0];
 }
@@ -106,4 +115,36 @@ function mostrarFooter(footerInfo) {
   footerTitle3.textContent = footerInfo.title3;
   footerEmail.textContent = footerInfo.correo1;
   footerEmail2.textContent = footerInfo.correo2;
+}
+const formulario = document.querySelector('#formulario');
+const botonContinuar = document.querySelector('#boton-continuar');
+
+botonContinuar.addEventListener('click', () => {
+  const datos = {
+    nombre: formulario.nombre.value,
+    telefono: formulario.telefono.value,
+    email: formulario.email.value
+  };
+  guardarDatos(datos);
+});
+
+function guardarDatos(datos) {
+  fetch('/src/mocks/data.json')
+    .then(response => response.json())
+    .then(data => {
+      data.datos.push(datos);
+      return fetch('/src/mocks/data.json', {
+        method: 'PUT',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+    })
+    .then(response => {
+      console.log('Datos guardados exitosamente');
+    })
+    .catch(error => {
+      console.error('Error al guardar los datos:', error);
+    });
 }
