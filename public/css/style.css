@@ -259,15 +259,31 @@ home-3 {}
 }
 
 /*Home 5*/
-.home-5 {
-  
+
+.linea{
+  border-top: 1px solid rgb(107, 104, 104);
+  height: 2px;
+  max-width: 1200px;
+  padding: 0;
+  margin: 10px auto 0 auto;
+}
+
+.Home-5 {
+margin: 30px;
+font-family: Poppins;
+
 }
 
 #formulario {
   padding: 20px;
   display: inline-block;
   flex-direction: column;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
+
 
 #boton-continuar {
   padding: 9px;
@@ -275,6 +291,7 @@ home-3 {}
   border: burlywood;
   background-color: burlywood;
   color: azure;
+  font-family: poppins;
 }
 
 /* Footer*/
@@ -345,4 +362,18 @@ footer {
   display: grid;
   grid-row: 2/3;
   grid-column: 1/2;
+}
+
+#formulario{
+  padding: 20px;
+ display: inline-block;
+flex-direction: column; 
+}
+
+#boton-continuar{
+  padding: 9px;
+  margin-left: 900px;
+ border: burlywood;
+  background-color: burlywood;
+color: azure;
 }
