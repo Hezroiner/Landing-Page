@@ -118,3 +118,18 @@ position: relative;
 .Home-3{
   background-color: #F5ECD8;
 }
+
+.Home-4{
+  height: 1460px;
+  background-color: #141e32;
+}
+
+.item-events{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-area: GALL;
+  padding-top: 15vh;
+  padding-bottom: 2%;
+  gap: 20px;
+}

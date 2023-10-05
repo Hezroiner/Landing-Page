@@ -36,5 +36,23 @@
         "nombre": "Evento4",
         "ruta": "/public/assets/Event-4.png"
       }
+    ],
+    "events":[
+      {
+        "title": "Eventos Deportivos",
+        "path": "/public/assets/Events-Sporting.jpg"
+      },
+      {
+        "title": "Eventos Especiales",
+        "path": "/public/assets/Events-Special.jpg"
+      },
+      {
+        "title": "Eventos Mascostas",
+        "path": "/public/assets/Events-Pets.jpg"
+      },
+      {
+        "title": "Eventos Artísticos",
+        "path": "/public/assets/Events-Artistic.jpg"
+      }
     ]
   }
