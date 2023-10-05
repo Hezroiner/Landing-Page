@@ -14,11 +14,13 @@ function cargarImagenes() {
       const rutaImagenPrincipal = data.imagenes[4].ruta;
       const codigo = data.codigo;
       const eventos = obtenerEventos(data);
+      const footer = obtenerFooter(data)
       mostrarImagenes(imagenes);
       mostrarLogo(rutaLogo);
       mostrarImagenPrincipal(rutaImagenPrincipal);
       ejecutarCodigo(codigo);
       mostrarEventos(eventos);
+      mostrarFooter(footer);
     })
     .catch(error => {
       console.error('Error al cargar las imágenes:', error);
@@ -79,4 +81,29 @@ function mostrarEventosInfo(eventosInfo) {
   infoTitle.textContent = eventosInfo.title;
   infoSubtitle.textContent = eventosInfo.subtitle;
   infoDescription.textContent = eventosInfo.description;
+}
+
+function obtenerFooter(data) {
+  return data['Footer-info-card'][0];
+}
+
+function mostrarFooter(footerInfo) {
+  const footerTitle = document.querySelector('.ti');
+  const footerTitle2 = document.querySelector('.ti2');
+  const footerTitle3 = document.querySelector('.ti3');
+  const footerSubtitle = document.querySelector('.sub');
+
+  const footerDescription = document.querySelector('.des');
+  const footerDescription2 = document.querySelector('.des2');
+  const footerEmail = document.querySelector('.correo');
+  const footerEmail2 = document.querySelector('.correo2');
+  
+  footerTitle.textContent = footerInfo.title1;
+  footerSubtitle.textContent = footerInfo.description;
+  footerDescription.textContent = footerInfo.subtitle;
+  footerDescription2.textContent = footerInfo.subtitle2;
+  footerTitle2.textContent = footerInfo.title2;
+  footerTitle3.textContent = footerInfo.title3;
+  footerEmail.textContent = footerInfo.correo1;
+  footerEmail2.textContent = footerInfo.correo2;
 }
