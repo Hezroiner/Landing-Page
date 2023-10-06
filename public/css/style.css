@@ -11,6 +11,12 @@ header {
   align-items: center;
   grid-row: 1;
   background-color: #F5F5F5;
+  height: 103px;
+}
+
+.logo-ico {
+  padding-bottom: 20px;
+  padding-left: 75px;
 }
 
 header .header-info {
@@ -42,14 +48,34 @@ header nav li {
   margin-right: 30px;
 }
 
+header h1 {
+  color: #141E32;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+header li {
+  color: #101928;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 /* Home 1*/
 .Home-1 {
   display: flex;
   justify-content: flex-end;
-  height: 540px;
   background-color: #F5ECD8;
+  height: 908px;
 }
-.texthome1{
+
+.texthome1 {
   display: flex;
   flex-direction: column;
   padding-right: 600px;
@@ -65,47 +91,115 @@ header nav li {
 }
 
 /* Home 2*/
-.Home-2{
-  background-color: #F5F5F5;
+.Home-2 {
+
+  height: 588px;
+}
+
+.cardshome2 {
+  height: 70%;
   display: flex;
-  height: 570px;
-  
+  flex-direction: row;
+  justify-content: center;
 }
-.card{
 
-  width: 254px;
-  height: 250px;
-  border-radius: 10px;
-  text-align: center;
-  background: #C5AF87;
-  
-
-}
-.cardshome2{
-
-  display: flex;
-  flex-direction: row ;
-  align-items: flex-end;
-  
-  
-}
-.card-information{
-
+.card {
   display: flex;
   flex-direction: column;
-  height: 188px;
-
+  align-items: center;
+  justify-content: center;
+  background-color: #C5AF87;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: 254px;
+  height: 267px;
+  padding: 20px;
+  margin: 20px;
 }
-.service{
 
+.card h3 {
+  color: #DDD;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card p {
+  color: #DDD;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bi-camera-fill {
+  color: black;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bi-camera-reels {
+  color: black;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bi-calendar-check {
+  color: black;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-information h3 {
   color: #C5AF87;
-  
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
+
+.card-information h2 {
+  color: #141E32;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card-information p {
+  color: #969696;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 
 
 /* Home 3 */
-
-home-3 {}
+.Home-3 {
+  background-color: #F5ECD8;
+}
 
 .cardGallery {
   display: flex;
@@ -172,10 +266,7 @@ home-3 {}
   position: relative;
 }
 
-/* Home 3 */
-.Home-3 {
-  background-color: #F5ECD8;
-}
+
 
 /* Home 4*/
 
@@ -259,9 +350,6 @@ home-3 {}
 }
 
 /*Home 5*/
-.home-5 {
-  
-}
 
 #formulario {
   padding: 20px;
@@ -282,6 +370,8 @@ footer {
   background-color: #393E46;
   padding: 50px 90px;
   color: #FFF;
+  height: 290px;
+  ;
 }
 
 .footer-contenido {
@@ -295,7 +385,6 @@ footer {
 
 .Tit1 i {
   margin-top: 20px;
-
   display: inline-block;
   display: grid;
   grid-template-columns: repeat(4, 30px);
@@ -345,4 +434,32 @@ footer {
   display: grid;
   grid-row: 2/3;
   grid-column: 1/2;
+}
+
+footer h1 {
+  color: #FFF;
+  text-align: start;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+footer p {
+  color: var(--light, #F4F4F4);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+footer h2 {
+  color: var(--White-color, #FFF);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
