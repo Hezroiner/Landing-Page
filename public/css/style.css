@@ -201,12 +201,23 @@ header li {
   background-color: #F5ECD8;
 }
 
+.Gallery {
+  display: flex;
+  justify-content: center;
+  color: #141E32;
+  font-family: Poppins;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .cardGallery {
   display: flex;
   flex-direction: row;
   align-items: center;
   grid-area: GALL;
-  padding-top: 15vh;
+  padding-top: 5vh;
   padding-bottom: 2%;
   gap: 20px;
 }
@@ -242,7 +253,7 @@ header li {
 #Gal img:hover {
   width: 50%;
   height: auto;
-  box-shadow: 0 0 30px #77c3cf;
+  box-shadow: 0 0 30px #fff8e7;
 }
 
 .Gallery-1 {
