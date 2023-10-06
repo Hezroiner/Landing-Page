@@ -16,6 +16,7 @@ function cargarImagenes() {
       const eventos = obtenerEventos(data);
       const footer = obtenerFooter(data);
       const servicios = obtenerServicios(data);
+      const Home = obtenerHome(data);
       mostrarImagenes(imagenes);
       mostrarLogo(rutaLogo);
       mostrarImagenPrincipal(rutaImagenPrincipal);
@@ -23,6 +24,7 @@ function cargarImagenes() {
       mostrarEventos(eventos);
       mostrarFooter(footer);
       mostrarServicios(servicios);
+      mostrarHomeInfo(Home);
     })
     .catch(error => {
       console.error('Error al cargar las imágenes:', error);
@@ -172,4 +174,17 @@ function mostrarServicios(servicios) {
       card.querySelector('p').textContent = description;
     }
   });
+}
+
+function obtenerHome(data) {
+  return data['Home-information'][0];
+}
+
+function mostrarHomeInfo(infoHome){
+  const homeTitle = document.querySelector('.titulo1');
+  const homeSubtitle = document.querySelector('.titulo2');
+  const homeDescription = document.querySelector('.comentario');
+  homeTitle.textContent = infoHome.title;
+  homeSubtitle.textContent = infoHome.subtitle;
+  homeDescription.textContent = infoHome.description;
 }
