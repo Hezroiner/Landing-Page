@@ -38,6 +38,8 @@ function mostrarImagenes(imagenes) {
 function mostrarLogo(rutaLogo) {
   const logoIco = document.querySelector('.logo-ico');
   logoIco.src = rutaLogo;
+  const logoIco2 = document.querySelector('.icon-logo2');
+  logoIco2.src = rutaLogo;
 }
 
 function mostrarImagenPrincipal(rutaImagenPrincipal) {
