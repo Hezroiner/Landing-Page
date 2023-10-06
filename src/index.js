@@ -13,6 +13,7 @@ function cargarImagenes() {
       const rutaLogo = data.imagenes[3].ruta;
       const rutaImagenPrincipal = data.imagenes[4].ruta;
       const codigo = data.codigo;
+      const cardInformation = data['Cards-info-card'][0];
       const eventos = obtenerEventos(data);
       const footer = obtenerFooter(data);
       mostrarImagenes(imagenes);
@@ -149,4 +150,12 @@ function guardarDatos(datos) {
     .catch(error => {
       console.error('Error al guardar los datos:', error);
     });
+}
+
+function mostrarServicios(imagenes) {
+  imagenes.forEach((imagen, index) => {
+    const img = document.querySelector(`.Gallery-${index + 1}`);
+    img.src = imagen.ruta;
+    img.alt = imagen.nombre;
+  });
 }

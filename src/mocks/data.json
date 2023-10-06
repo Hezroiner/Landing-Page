@@ -76,14 +76,24 @@
   ],
   "Cards-info-card": [
     {
-      "title1": "Fotografia Profesional",
-      "title2": "Fotografias con Dron",
-      "title3": "Videos aereos con dron",
-      "title4": "Diferentes eventos",
+      "title": "Nuestros Servicios ",
+      "title2": "Les brindamos los siguientes servicios",
+      "subtitle": "4 tipos de servicios para la eleccion del cliente y tiene la disponibilidad de eligir el que vea mas conveniente",
+      "title3": "Fotografia Profesional",
+      "title4": "Fotografias con Dron",
+      "title5": "Videos aereos con dron",
+      "title6": "Diferentes eventos",
       "description": "Los servicios de fotografía profesional pueden ser contratados para una variedad de propósitos, incluyendo eventos, retratos, productos, moda y publicidad.",
       "description2": "Nuestros pilotos de drones profesionales cuentan con la experiencia y el equipo necesario para crear imágenes de alta calidad que te dejarán sin aliento.",
       "description3": "En este caso nuestros drones son utilizados para capturar videos aéreos de eventos deportivos, conciertos, bodas y otros eventos.",
       "description4": "Los eventos son una excelente manera de capturar los momentos más importantes en el mismo. Si estás buscando una forma profesional y creativa de documentar tu evento nosotros somos la mejor opción."
+    }
+  ],
+  "Home-information": [
+    {
+      "title": "Capturando momentos",
+      "subtitle": "Que podemos ofrecerle al cliente",
+      "description": "Buscamos darle al cliente la mayor confianza en lo que a precio y comodidad se refiere, tomando grandes fotografias dependiendo de sus intereses."
     }
   ],
   "datos": []
