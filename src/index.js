@@ -13,15 +13,16 @@ function cargarImagenes() {
       const rutaLogo = data.imagenes[3].ruta;
       const rutaImagenPrincipal = data.imagenes[4].ruta;
       const codigo = data.codigo;
-      const cardInformation = data['Cards-info-card'][0];
       const eventos = obtenerEventos(data);
       const footer = obtenerFooter(data);
+      const servicios = obtenerServicios(data);
       mostrarImagenes(imagenes);
       mostrarLogo(rutaLogo);
       mostrarImagenPrincipal(rutaImagenPrincipal);
       ejecutarCodigo(codigo);
       mostrarEventos(eventos);
       mostrarFooter(footer);
+      mostrarServicios(servicios);
     })
     .catch(error => {
       console.error('Error al cargar las imágenes:', error);
@@ -151,11 +152,24 @@ function guardarDatos(datos) {
       console.error('Error al guardar los datos:', error);
     });
 }
+function obtenerServicios(data) {
+  return data['Cards-info-card'][0];
+}
 
-function mostrarServicios(imagenes) {
-  imagenes.forEach((imagen, index) => {
-    const img = document.querySelector(`.Gallery-${index + 1}`);
-    img.src = imagen.ruta;
-    img.alt = imagen.nombre;
+function mostrarServicios(servicios) {
+  const cardInformation = document.querySelector('.card-information');
+  const cardshome2 = document.querySelector('.cardshome2');
+  cardInformation.querySelector('h3').textContent = servicios.title;
+  cardInformation.querySelector('h2').textContent = servicios.title2;
+  cardInformation.querySelector('p').textContent = servicios.subtitle;
+  const descriptionKeys = Object.keys(servicios).filter(key => key.startsWith('description'));
+  descriptionKeys.forEach((key, index) => {
+    const title = servicios[`title${index + 3}`];
+    const description = servicios[key];
+    const card = cardshome2.querySelector(`.card:nth-child(${index + 1 })`);
+    if (card) {
+      card.querySelector('h3').textContent = title;
+      card.querySelector('p').textContent = description;
+    }
   });
 }
