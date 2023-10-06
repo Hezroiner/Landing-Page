@@ -404,6 +404,35 @@ footer {
   height: 290px;
   ;
 }
+}
+
+footer h1 {
+  color: #FFF;
+  text-align: start;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+footer p {
+  color: var(--light, #F4F4F4);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+footer h2 {
+  color: var(--White-color, #FFF);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
 .footer-contenido {
   width: 100%;
